@@ -57,6 +57,7 @@
       margin-top: 40px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       animation: bounceIn 1s ease;
+      overflow: hidden;
     }
 
     @keyframes bounceIn {
@@ -66,9 +67,9 @@
     }
 
     .logo-container img {
-      width: 80%;
-      height: auto;
-      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .links {
@@ -114,7 +115,8 @@
       }
 
       .logo-container img {
-        width: 70%;
+        width: 100%;
+        height: 100%;
       }
 
       .link-button {
@@ -131,7 +133,7 @@
 </head>
 <body>
   <div class="logo-container">
-    <img src="logo_editada.png" alt="Ysla Marinho Logo" />
+    <img src="logo_circular_full.png" alt="Ysla Marinho Logo" />
   </div>
   <div class="links">
     <a class="link-button" href="https://wa.me/5594988094247?text=Ol%C3%A1%20quero%20agendar%20com%20a%20Ysla" target="_blank">
