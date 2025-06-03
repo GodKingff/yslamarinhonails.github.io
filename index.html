@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,113 +10,116 @@
       --bege: #d7bfa6;
       --bege-escuro: #c6ac90;
       --marrom: #4e342e;
-    }body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--offwhite);
-  color: var(--marrom);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  min-height: 100vh;
-  animation: fadeIn 1.5s ease;
-}
+    }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, var(--offwhite), var(--bege), var(--bege-escuro) 75%);
+      color: var(--marrom);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease;
+    }
 
-.logo-container {
-  background-color: #f5e4d3;
-  border: 4px solid var(--bege);
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: bounceIn 1s ease;
-}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-@keyframes bounceIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  60% { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); }
-}
+    .logo-container {
+      background: linear-gradient(#f5e4d3, #f5e4d3) padding-box,
+                  linear-gradient(135deg, #d4af37, #ffd700, #b8860b) border-box;
+      border: 4px solid transparent;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: bounceIn 1s ease;
+    }
 
-.logo-container img {
-  width: 80%;
-  height: auto;
-  border-radius: 50%;
-}
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
 
-.links {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 90%;
-  max-width: 300px;
-}
+    .logo-container img {
+      width: 80%;
+      height: auto;
+      border-radius: 50%;
+    }
 
-.link-button {
-  padding: 15px;
-  background-color: var(--bege);
-  color: var(--marrom);
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
+    .links {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      max-width: 300px;
+    }
 
-.link-button:hover {
-  background-color: var(--bege-escuro);
-  transform: scale(1.03);
-}
+    .link-button {
+      padding: 15px;
+      background-color: var(--bege);
+      color: var(--marrom);
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
 
-.link-button img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) saturate(100%) invert(26%) sepia(16%) saturate(1176%) hue-rotate(352deg) brightness(92%) contrast(86%);
-}
+    .link-button:hover {
+      background-color: var(--bege-escuro);
+      transform: scale(1.03);
+    }
 
-@media (max-width: 600px) {
-  .logo-container {
-    width: 120px;
-    height: 120px;
-  }
+    .link-button img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) saturate(100%) invert(26%) sepia(16%) saturate(1176%) hue-rotate(352deg) brightness(92%) contrast(86%);
+    }
 
-  .logo-container img {
-    width: 70%;
-  }
+    @media (max-width: 600px) {
+      .logo-container {
+        width: 120px;
+        height: 120px;
+      }
 
-  .link-button {
-    padding: 12px;
-    font-size: 14px;
-  }
+      .logo-container img {
+        width: 70%;
+      }
 
-  .link-button img {
-    width: 20px;
-    height: 20px;
-  }
-}
+      .link-button {
+        padding: 12px;
+        font-size: 14px;
+      }
 
+      .link-button img {
+        width: 20px;
+        height: 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="logo-container">
     <img src="logo.png" alt="Ysla Marinho Logo" />
-  </div>  <div class="links">
+  </div>
+  <div class="links">
     <a class="link-button" href="https://wa.me/5594988094247?text=Ol%C3%A1%20quero%20agendar%20com%20a%20Ysla" target="_blank">
       <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
       WhatsApp
