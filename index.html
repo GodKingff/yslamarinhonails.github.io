@@ -27,15 +27,15 @@
       overflow-x: hidden;
     }
 
-    /* Degradê inferior da página */
+    /* Degradê suave na parte inferior da página (subindo até 80% da metade da tela) */
     body::after {
       content: "";
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 100px; /* altura do degradê */
-      background: linear-gradient(to top, var(--bege-escuro), transparent);
+      height: 40vh; /* aproximadamente 80% da metade da tela */
+      background: linear-gradient(to top, rgba(198, 172, 144, 0.6), transparent);
       pointer-events: none;
       z-index: -1;
     }
@@ -150,3 +150,5 @@
   </div>
 </body>
 </html>
+    
+        
